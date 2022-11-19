@@ -17,6 +17,10 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.logo.firebase:hover {
+  filter: drop-shadow(0 0 2em #FFCB2B);
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
