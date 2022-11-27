@@ -21,6 +21,10 @@
   filter: drop-shadow(0 0 2em #FFCB2B);
 }
 
+.logo.trpc:hover {
+  filter: drop-shadow(0 0 2em #398ccb);
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
