@@ -1,16 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import reactLogo from "./assets/react.svg";
 import firebaseLogo from "./assets/firebase.svg";
+import trpcLogo from "./assets/trpc.svg";
 import "./App.css";
 import {Box, Button} from "@mui/material";
 import useWindowSize from "../hooks/useWindowSize";
 import useFetch from "../hooks/useFetch";
 import {morph} from "../util/helper";
+import { trpc } from "../util/trpc";
 
 const API_URL = import.meta.env.VITE_APP_API_URL; 
 
 function App() {
   const {width} = useWindowSize();
+  const helloTrpc = trpc.hello.useQuery();
   const {data, loading} = useFetch(`${API_URL}/exampleFunction-exampleFunction`); 
   const [count, setCount] = useState(0);
   const cardParams = {
@@ -38,9 +41,13 @@ function App() {
           <a href="https://firebase.google.com/docs/functions" target="_blank" rel="noreferrer">
             <img src={firebaseLogo} className="logo firebase" alt="Firebase logo" />
           </a>
+          <a href="https://trpc.io/" target="_blank" rel="noreferrer">
+            <img src={trpcLogo} className="logo trpc" alt="Trpc logo" />
+          </a>
         </Box>
-        <h1>Vite + React + Firebase </h1>
+        <h1>Vite + React + Firebase + trpc </h1>
         <h2> {data?.data}</h2>
+        <h3> {helloTrpc.data}</h3>
         <div>
           <Button onClick={() => setCount((count) => count + 1)}>
             count is {count}

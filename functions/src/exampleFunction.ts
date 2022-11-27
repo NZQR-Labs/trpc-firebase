@@ -9,6 +9,6 @@ export const exampleFunction = functions.runWith({
   memory: "1GB",
 }).https.onRequest((req: Request, res: Response) => {
   corsHandler(req, res, async () => {
-    res.status(200).send({data: "Hello from Firebase!"});
+    res.status(200).send({data: "Hello from Firebase Function!"});
   });
 });
