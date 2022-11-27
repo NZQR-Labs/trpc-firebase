@@ -1,5 +1,5 @@
-import express = require("express");
-import cors = require("cors");
+import * as express from "express";
+import * as cors from "cors";
 import * as functions from "firebase-functions";
 import { TRPCError, inferAsyncReturnType, initTRPC } from "@trpc/server";
 import * as trpcExpress from "@trpc/server/adapters/express";
