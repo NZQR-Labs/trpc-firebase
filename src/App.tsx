@@ -47,7 +47,7 @@ function App() {
         </Box>
         <h1>Vite + React + Firebase + trpc </h1>
         <h2> {loading ? "Firebase loading...." : data?.data}</h2>
-        <h3> {helloTrpc.isLoading ? "trpc is loading" : helloTrpc.data}</h3>
+        <h3> {helloTrpc.isLoading ? "trpc is loading...." : helloTrpc.data}</h3>
         <div>
           <Button onClick={() => setCount((count) => count + 1)}>
             count is {count}

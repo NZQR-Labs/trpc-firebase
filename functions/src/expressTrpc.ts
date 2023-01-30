@@ -7,10 +7,8 @@ import { appRouter } from "./trpc/router/_app";
 
 const app = express();
 
-// Automatically allow cross-origin requests
 app.use(cors({ origin: true }));
 
-// build multiple CRUD interfaces:
 app.get("/:id", (req, res) => res.send({"data": "get /:id"}));
 app.post("/", (req, res) => res.send({"data": "post /"}));
 app.put("/:id", (req, res) => res.send({"data": "put /:id"}));
