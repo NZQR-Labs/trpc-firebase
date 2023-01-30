@@ -17,4 +17,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TRPC_FIREBASE }}'
           channelId: live
-          projectId: create-fff
+          projectId: trpc-firebase-67836
