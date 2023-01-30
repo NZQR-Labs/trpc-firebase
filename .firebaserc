@@ -1,5 +1,5 @@
 {
   "projects": {
-    "default": "create-fff"
+    "default": "trpc-firebase-functions"
   }
 }

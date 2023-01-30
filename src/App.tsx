@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import firebaseLogo from "./assets/firebase.svg";
 import trpcLogo from "./assets/trpc.svg";
@@ -46,8 +46,8 @@ function App() {
           </a>
         </Box>
         <h1>Vite + React + Firebase + trpc </h1>
-        <h2> {data?.data}</h2>
-        <h3> {helloTrpc.data}</h3>
+        <h2> {loading ? "Firebase loading...." : data?.data}</h2>
+        <h3> {helloTrpc.isLoading ? "trpc is loading" : helloTrpc.data}</h3>
         <div>
           <Button onClick={() => setCount((count) => count + 1)}>
             count is {count}
