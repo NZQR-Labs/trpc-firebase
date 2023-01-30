@@ -5,8 +5,8 @@ import { tap } from "@trpc/server/observable";
 import React, { useState } from "react";
 
 const RootProvider = ({ children }: { children: React.ReactNode }) => {
-  const url = import.meta.env.MODE === "development" ? "http://127.0.0.1:5001/create-fff/us-central1/expressExample-crud/trpc" 
-    : "https://us-central1-create-fff.cloudfunctions.net/expressExample-crud/trpc";
+  const url = import.meta.env.MODE === "development" ? "http://127.0.0.1:5001/create-fff/us-central1/expressTrpc-crud/trpc" 
+    : "https://us-central1-create-fff.cloudfunctions.net/expressTrpc-crud/trpc";
   const [queryClient] = useState(() => new QueryClient());
   const [trpcClient] = useState(() =>
     trpc.createClient({
