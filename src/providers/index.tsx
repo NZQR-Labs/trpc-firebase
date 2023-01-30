@@ -4,9 +4,11 @@ import { trpc } from "../../util/trpc";
 import { tap } from "@trpc/server/observable";
 import React, { useState } from "react";
 
+const API_URL = import.meta.env.VITE_APP_API_URL; 
+
 const RootProvider = ({ children }: { children: React.ReactNode }) => {
-  const url = import.meta.env.MODE === "development" ? "http://127.0.0.1:5001/create-fff/us-central1/expressTrpc-crud/trpc" 
-    : "https://us-central1-create-fff.cloudfunctions.net/expressTrpc-crud/trpc";
+  const url = import.meta.env.MODE === "development" ? `${API_URL}/expressTrpc-crud/trpc` 
+    : `${API_URL}/expressTrpc-crud/trpc`;
   const [queryClient] = useState(() => new QueryClient());
   const [trpcClient] = useState(() =>
     trpc.createClient({
