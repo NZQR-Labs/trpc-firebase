@@ -86,13 +86,12 @@ The project also includes mui for styling, and is created using vite, but both o
 
 * [![React][React.js]][React-url]
 * [![TRPC][TRPC]][TRPC-url]
+* [![Express][Express]][Express-url]
 * [![Firebase][Firebase]][Firebase-url]
 * [![MUI][MUI]][MUI-url]
 * [![Vite][VIte]][Vite-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -143,11 +142,13 @@ You need firebaes-tools to be able initiate the firebase functions.
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[MUI]: https://img.shields.io/badge/MUI-35495E?style=for-the-badge&logo=mui&logoColor=#007fff
+[MUI]: https://img.shields.io/badge/MUI-20232A?style=for-the-badge&logo=mui&logoColor=#007fff
 [MUI-url]: https://mui.com/material-ui/getting-started/overview/
-[TRPC]: https://img.shields.io/badge/trpc-35495E?style=for-the-badge&logo=trpc&logoColor=#398ccb
+[TRPC]: https://img.shields.io/badge/trpc-20232A?style=for-the-badge&logo=trpc&logoColor=#398ccb
 [TRPC-url]: https://trpc.io/
-[Vite]: https://img.shields.io/badge/vite-4A4A55?style=for-the-badge&logo=vite&logoColor=ffc31b
+[Vite]: https://img.shields.io/badge/vite-20232A?style=for-the-badge&logo=vite&logoColor=ffc31b
 [Vite-url]: [https://svelte.dev/](https://vitejs.dev/)
-[Firebase]: https://img.shields.io/badge/firebase-4A4A55?style=for-the-badge&logo=firebase&logoColor=FFA611
+[Firebase]: https://img.shields.io/badge/firebase-20232A?style=for-the-badge&logo=firebase&logoColor=FFA611
 [Firebase-url]: https://firebase.google.com/docs/functions
+[Express]: https://img.shields.io/badge/express-20232A?style=for-the-badge&logo=express&logoColor=000000
+[Express-url]: https://firebase.google.com/docs/functions
