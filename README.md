@@ -148,6 +148,6 @@ You need firebaes-tools to be able initiate the firebase functions.
 [TRPC]: https://img.shields.io/badge/trpc-35495E?style=for-the-badge&logo=trpc&logoColor=#398ccb
 [TRPC-url]: https://trpc.io/
 [Vite]: https://img.shields.io/badge/vite-4A4A55?style=for-the-badge&logo=vite&logoColor=ffc31b
-[Vite-url]: https://svelte.dev/
+[Vite-url]: [https://svelte.dev/](https://vitejs.dev/)
 [Firebase]: https://img.shields.io/badge/firebase-4A4A55?style=for-the-badge&logo=firebase&logoColor=FFA611
 [Firebase-url]: https://firebase.google.com/docs/functions
