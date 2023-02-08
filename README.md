@@ -55,14 +55,9 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#deployment">Deployment</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -123,6 +118,26 @@ You need firebaes-tools to be able initiate the firebase functions.
 3. Connect your firebase project
    ```js
    firebase init 
+   
+   ```
+### Deployment
+
+1. Build and deploy client side
+   ```sh
+   npm run build 
+   
+   firebase deploy --only hosting 
+   ```
+2. Deploy server side functions 
+   ```sh
+   cd functions 
+   
+   firebase deploy --only functions 
+   
+   ```
+2.1. You can also deploy only specific functions 
+   ```sh
+   firebase deploy --only functions:myFunction
    ```
 
 
