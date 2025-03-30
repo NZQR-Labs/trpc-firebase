@@ -30,7 +30,7 @@
 <h3 align="center">Firebase Functions + TRPC</h3>
 
   <p align="center">
-    This projets implent trpc with firebase functions via the use of the express adapter from trpc. 
+    This project implents trpc with firebase functions via the use of the express adapter from trpc. 
     <br />
     <a href="https://trpc.io/docs/express">See express documentation</a>
     <br />
