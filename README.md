@@ -30,7 +30,7 @@
 <h3 align="center">Firebase Functions + TRPC</h3>
 
   <p align="center">
-    This project implents trpc with firebase functions via the use of the express adapter from trpc. 
+    This project implents trpc with firebase functions via the use of the express adapter from trpc, allowing for E2E typing for firebase functions.
     <br />
     <a href="https://trpc.io/docs/express">See express documentation</a>
     <br />
@@ -82,9 +82,9 @@ The project also includes mui for styling, and is created using vite, but both o
 * [![React][React.js]][React-url]
 * [![TRPC][TRPC]][TRPC-url]
 * [![Express][Express]][Express-url]
-* [![Firebase][Firebase]][Firebase-url]
-* [![MUI][MUI]][MUI-url]
+* [![Firebase][Firebase]][Firebase-url] 
 * [![Vite][VIte]][Vite-url]
+* [![TanStack][TamStack]][Vite-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,6 +120,7 @@ You need firebaes-tools to be able initiate the firebase functions.
    firebase init 
    
    ```
+   
 ### Deployment
 
 1. Build and deploy client side

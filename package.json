@@ -11,27 +11,26 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@mui/material": "^5.10.14",
-    "@tanstack/react-query": "^4.18.0",
-    "@trpc/client": "^10.3.0",
-    "@trpc/react-query": "^10.3.0",
-    "@trpc/server": "^10.3.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "superjson": "^1.11.0"
+    "@tanstack/react-query": "^5.71.0",
+    "@trpc/client": "^11.0.1",
+    "@trpc/react-query": "^11.0.1",
+    "@trpc/server": "^11.0.1",
+    "@trpc/tanstack-react-query": "^11.0.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "styled-components": "^6.1.16",
+    "superjson": "^2.2.2"
   },
   "devDependencies": {
-    "@types/react": "^18.0.24",
-    "@types/react-dom": "^18.0.8",
-    "@typescript-eslint/eslint-plugin": "^5.43.0",
-    "@typescript-eslint/parser": "^5.43.0",
-    "@vitejs/plugin-react": "^2.2.0",
-    "concurrently": "^7.5.0",
-    "eslint": "^8.28.0",
-    "eslint-plugin-react": "^7.31.11",
-    "typescript": "^4.6.4",
-    "vite": "^3.2.3"
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.23.0",
+    "eslint-plugin-react": "^7.37.4",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.3"
   }
 }

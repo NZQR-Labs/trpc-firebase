@@ -6,36 +6,36 @@
     "build:watch": "tsc --watch",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
+    "dev": "firebase emulators:start --only functions",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log",
-    "dev": "concurrently \"npm run build:watch\" \"firebase emulators:start\""
+    "logs": "firebase functions:log"
   },
   "engines": {
-    "node": "16"
+    "node": "18"
   },
   "main": "lib/index.js",
   "dependencies": {
-    "@trpc/client": "^10.3.0",
-    "@trpc/react-query": "^10.3.0",
-    "@trpc/server": "^10.3.0",
-    "@types/express": "^4.17.14",
-    "@types/node-fetch": "^2.5.11",
+    "@trpc/client": "^11.0.1",
+    "@trpc/react-query": "^11.0.1",
+    "@trpc/server": "^11.0.1",
+    "@types/express": "^5.0.1",
+    "@types/node-fetch": "^2.6.12",
     "abort-controller": "^3.0.0",
     "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.18.0",
-    "node-fetch": "^2.6.1",
-    "zod": "^3.0.0"
+    "express": "^4.21.2",
+    "firebase-admin": "^13.2.0",
+    "firebase-functions": "^6.3.2",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.12.0",
-    "@typescript-eslint/parser": "^5.12.0",
-    "eslint": "^8.9.0",
-    "eslint-plugin-import": "^2.25.4",
-    "firebase-functions-test": "^0.2.0",
-    "typescript": "^4.5.4"
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.31.0",
+    "firebase-functions-test": "^3.4.1",
+    "typescript": "^5.8.2"
   },
   "private": true
 }
