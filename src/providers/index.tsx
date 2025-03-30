@@ -1,42 +1,51 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { httpBatchLink } from "@trpc/client";
-import { trpc } from "../../util/trpc";
-import { tap } from "@trpc/server/observable";
-import React, { useState } from "react";
+import { createTRPCClient, httpBatchLink } from "@trpc/client";
+import { useState } from "react";
+import { TRPCProvider } from "../../utils/trpc";
+import type { AppRouter } from "../../functions/src/root"; 
 
 const API_URL = import.meta.env.VITE_APP_API_URL; 
 
+function makeQueryClient() {
+  return new QueryClient({
+    defaultOptions: {
+      queries: { 
+        staleTime: 60 * 1000,
+      },
+    },
+  });
+}
+
+let browserQueryClient: QueryClient | undefined = undefined;
+
+function getQueryClient() {
+  if (typeof window === "undefined") { 
+    return makeQueryClient();
+  } else { 
+    if (!browserQueryClient) browserQueryClient = makeQueryClient();
+    return browserQueryClient;
+  }
+}
+
 const RootProvider = ({ children }: { children: React.ReactNode }) => {
-  const url = import.meta.env.MODE === "development" ? `${API_URL}/expressTrpc-crud/trpc` 
-    : `${API_URL}/expressTrpc-crud/trpc`;
-  const [queryClient] = useState(() => new QueryClient());
+  const url = import.meta.env.MODE === "development" ? `${API_URL}/api-express/trpc` 
+    : `${API_URL}/api-express/trpc`;
+    
+  const queryClient = getQueryClient(); 
   const [trpcClient] = useState(() =>
-    trpc.createClient({
+    createTRPCClient<AppRouter>({
       links: [
-        () =>
-          ({ op, next }) => {
-            console.log("->", op.type, op.path, op.input);
-            return next(op).pipe(
-              tap({
-                next(result) {
-                  console.log("<-", op.type, op.path, op.input, ":", result);
-                },
-              }),
-            );
-          },
         httpBatchLink({
           url: url,
         }),
       ],
     }),
   );
-  return <div>
-    <trpc.Provider client={trpcClient} queryClient={queryClient}>
-      <QueryClientProvider client={queryClient}>
-        {children}
-      </QueryClientProvider>
-    </trpc.Provider>
-  </div>;
+  return <QueryClientProvider client={queryClient}>
+    <TRPCProvider trpcClient={trpcClient} queryClient={queryClient}>
+      {children}
+    </TRPCProvider>
+  </QueryClientProvider>;
 };
 
 export default RootProvider;
