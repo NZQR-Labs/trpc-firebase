@@ -84,7 +84,7 @@ The project also includes mui for styling, and is created using vite, but both o
 * [![Express][Express]][Express-url]
 * [![Firebase][Firebase]][Firebase-url] 
 * [![Vite][VIte]][Vite-url]
-* [![TanStack][TamStack]][Vite-url]
+* [![Tanstack][Tanstack]][Tanstack-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,8 +117,7 @@ You need firebaes-tools to be able initiate the firebase functions.
    ```
 3. Connect your firebase project
    ```js
-   firebase init 
-   
+   firebase init  
    ```
    
 ### Deployment
@@ -157,14 +156,19 @@ You need firebaes-tools to be able initiate the firebase functions.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[MUI]: https://img.shields.io/badge/MUI-20232A?style=for-the-badge&logo=mui&logoColor=#007fff
-[MUI-url]: https://mui.com/material-ui/getting-started/overview/
+[React-url]: https://reactjs.org/ 
+
 [TRPC]: https://img.shields.io/badge/trpc-20232A?style=for-the-badge&logo=trpc&logoColor=#398ccb
 [TRPC-url]: https://trpc.io/
+
 [Vite]: https://img.shields.io/badge/vite-20232A?style=for-the-badge&logo=vite&logoColor=ffc31b
 [Vite-url]: [https://svelte.dev/](https://vitejs.dev/)
+
 [Firebase]: https://img.shields.io/badge/firebase-20232A?style=for-the-badge&logo=firebase&logoColor=FFA611
 [Firebase-url]: https://firebase.google.com/docs/functions
+
 [Express]: https://img.shields.io/badge/express-20232A?style=for-the-badge&logo=express&logoColor=000000
 [Express-url]: https://firebase.google.com/docs/functions
+
+[Tanstack-url]: https://tanstack.com/
+[Tanstack]: https://img.shields.io/badge/React%20Query-FF4154?logo=reactquery&logoColor=fff
